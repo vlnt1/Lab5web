@@ -1,0 +1,49 @@
+<html>
+<head>
+    <script language="javascript">
+    function test () {
+        var val1=<document.kirim.T1.value 
+        if (val1%2==0)  
+            document.kirim.T2.value="bilangan genap"
+        else
+            document.kirim.T2.value="bilangan ganjil"
+    }
+    </script>
+</head>
+<body>
+    <form method="POST" name="kirim">
+        <p>BIL <input type="text" name="T1" size="20">
+        MERUPAKAN BIL <input type="text" name="T2" size="20"></p>
+        <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+    </form>
+</body>
+</html>
+
+<html>
+<head>
+    <title>objek document</title>
+</head>
+<body>
+    <script language = "javascript">
+    function ubahwarnaLB(warna) {
+        docuemnt.bgColor = warna;
+    }
+    function ubahwarnaLD(warna) {
+        document.fgColor = warna;
+        
+    </script>
+    
+    <h1>tes</h1>
+    <form>
+        <input type="button" value="Latar Belakang Hijau" onClick="ubahWarnaLB('GREEN')">
+        <input type="button" value="Latar Belakang Putih" onClick="ubahWarnaLB('WHITE')">
+        <input type="button" value="Latar Belakang Kuning" onClick="ubahWarnaLB('YELLOW')">
+        <input type="button" value="Latar Belakang Biru" onClick="ubahWarnaLB('BLUE')">
+    </form>
+    <script language = "javascript">
+    document.write("Dimodifikasi terakhir pada." +
+    document.lastModified);
+    </script>
+
+</body>
+</html>
